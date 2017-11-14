@@ -1,0 +1,15 @@
+/*
+Theme Name: BaseOfBases
+Theme URI:
+Author: degarashi
+Author URI:
+Description: BaseOfBases is simple template theme of WordPress.
+Version: 1.0
+License: MIT
+Text Domain: baseofbases
+*/
+
+html body {
+	margin: 0;
+	padding: 0;
+}
