@@ -12,10 +12,9 @@
 					<div class="collapse navbar-collapse" id="menu-bar">
 						<ul class="nav navbar-nav">
 							<li><a href="/">Home</a></li>
-							<li><a href="/page1">固定ページ1</a></li>
-							<li><a href="/page2">固定ページ2</a></li>
-							<li><a href="/post">通常記事最近</a></li>
-							<li><a href="/custom-post">カスタム記事最近</a></li>
+							<li><a href="/<?php echo date('Y');?>/<?php echo date('m');?>">今月の記事</a></li>
+							<li><a href="/example_custom_post">カスタム投稿記事</a></li>
+							<li><a href="/about">固定ページ</a></li>
 						</ul>
 						<ul class="nav navbar-right">
 							<form class="navbar-form navbar-left" role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/'));?>">

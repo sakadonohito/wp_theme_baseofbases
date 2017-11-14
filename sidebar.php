@@ -46,8 +46,9 @@ if ($tags) {
 	    <div id="sidebar" class="">
 			<p>カスタム投稿用サイドバーサンプル</p>
 <?php
-/* 特定の年月だけ表示したい場合
+    /*
 $args = array(
+    'post_type' => array('example_custom_post'),
     'post_per_page' => -1,
     'date_query' => array(
         array( 
@@ -57,14 +58,16 @@ $args = array(
     )
 );
 $posts = new WP_Query($args);
-*/
+    */
 ?>
 
 <?php
+/*
 echo '<div><p>年月アーカイブ</p><ul>';
-//echo sprintf('<li><a href="%s">今月の記事</a> ( %d )</li>',get_month_link('',''),$posts->found_posts);
-wp_get_archives(['show_post_count' => true]);
+echo sprintf('<li><a href="%s">今月の記事</a> ( %d )</li>',get_month_link('',''),$posts->found_posts);
+//wp_get_archives(['show_post_count' => true]);
 echo '</ul></div>';
+*/
 
 $cats = wp_list_categories('taxonomy=example_taxonomy&show_count=1');
 if($cats){
